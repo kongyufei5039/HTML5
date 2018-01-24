@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首部和尾部</title>
+    <style>
+        h1,
+        h2,
+        h3 {
+            background: black;
+            color: aliceblue
+        }
+
+        hgroup>h1 {
+            background: rgb(18, 102, 228);
+            color: aliceblue;
+            margin-bottom: 0px;
+        }
+
+        hgroup>h2 {
+            background: rgb(18, 102, 228);
+            color: aliceblue;
+            font-style: 1em;
+            margin-top: 0px;
+        }
+
+        body>header *, footer > * {background:transparent; color:black;}
+        body>section, body>section>section,
+        body>section>section>section{margin-left: 10px;}
+
+        body>header, body>footer{border: medium solid black; padding-left: 5px; margin: 10px 0 10px 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Things I like</h1>
+            <h2>by Adam Freeman</h2>
+        </hgroup>
+    </header>
+    <section>
+        <header>
+            <hgroup>
+                <h1>Fruits I Like</h1>
+                <h2>How I Learned to Love Citrus</h2>
+            </hgroup>
+        </header>
+        I like apples and oranges.
+        <section>
+            <h1>Additional fruits</h1>
+            I also like bananas, mangoes, cherries, apricots, plus, peaches, and grapes.
+            <section>
+                <h1>More information</h1>
+                You can see other fruits I like
+                <a href="https://www.baidu.com/s?wd=%E6%B0%B4%E6%9E%9C">here</a>
+            </section>
+        </section>
+    </section>
+
+    <section>
+        <header>
+            <h1>Activities I like</h1>
+        </header>
+        <section>
+            <header>
+                <h1>Activities I like</h1>
+            </header>
+            <section>
+                    <p>I like to swim, cycle and run. I am in training for my first triathlon, but it is hard work.</p>
+                    <h1>Kinds of Triathlon</h1>
+                    There are different kinds of triathlon - sprint, Olympic and so on.
+                    <section>
+                            <h1>The kind of triathlon I am aiming for</h1>
+                            I am animing for Olympic, which consists of the following:
+                            <ol>
+                                <li>1.5km swim</li>
+                                <li>40km cycle</li>
+                                <li>10km run</li>
+                            </ol>
+                    </section>
+            </section>
+        </section>
+    </section>
+    <footer id="mainFooter">
+        &#169;2011, Adam Freeman. <a href="http://apress.com">Visit Apress</a>
+    </footer>
+</body>
+</html>

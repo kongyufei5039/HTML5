@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提供联系信息</title>
+    <style>
+            h1,
+            h2,
+            h3 {
+                background: black;
+                color: aliceblue
+            }
+    
+            hgroup>h1 {
+                background: rgb(18, 102, 228);
+                color: aliceblue;
+                margin-bottom: 0px;
+            }
+    
+            hgroup>h2 {
+                background: rgb(18, 102, 228);
+                color: aliceblue;
+                font-style: 1em;
+                margin-top: 0px;
+            }
+    
+            body>header *,
+            footer>* {
+                background: transparent;
+                color: black;
+            }
+    
+            article {
+                border: thin black solid;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+    
+            article>footer {
+                padding: 5px;
+                margin: 5px;
+                text-align: center
+            }
+    
+            article>footer>nav>a {
+                color: white
+            }
+    
+            body>article>section,
+            body>article>section>section {
+                margin-left: 10px;
+            }
+    
+            body>header,
+            body>footer {
+                border: medium solid black;
+                padding-left: 5px;
+                margin: 10px 0 10px 0;
+            }
+    
+            body>nav {
+                text-align: center;
+                padding: 2px;
+                border: dashed thin black;
+            }
+    
+            body>nav>a {
+                padding: 2px;
+                color: black;
+            }
+    
+            aside {
+                width: 40%;
+                background: white;
+                float: right;
+                border: thick solid black;
+                margin-left: 5px;
+            }
+    
+            aside>section {
+                padding: 5px;
+            }
+    
+            aside>h1 {
+                background: white;
+                color: black;
+                text-align: center
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <hgroup>
+                <h1>Things I like</h1>
+                <h2>by Adam Freeman</h2>
+            </hgroup>
+            <address>
+                Questions and comments? <a href="mailto:adam@myboringblog.com">Email me</a>
+            </address>
+            <nav>
+                <h1>Contents</h1>
+                <ul>
+                    <li>
+                        <a href="#fruitsilike">Fruits I Like</a>
+                    </li>
+                    <li>
+                        <a href="#activitieslike">Activities I Like</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <header>
+                <hgroup>
+                    <h1 id="fruitsilike">Fruits I Like</h1>
+                    <h2>How I Learned to Love Citrus</h2>
+                </hgroup>
+            </header>
+            <aside>
+                <h1>Why Fruit is Healthy</h1>
+                <section>
+                    Here are three reasons why everyone should eat more fruit:
+                    <ol>
+                        <li>Fruit contains lots of vitamins</li>
+                        <li>Fruit is a source of fibre</li>
+                        <li>Fruit contains few calories</li>
+                    </ol>
+                </section>
+            </aside>
+            I like apples and oranges.
+            <section>
+                <h1 id="morefruit">Additional fruits</h1>
+                I also like bananas, mangoes, cherries, apricots, plus, peaches, and grapes.
+                <section>
+                    <h1>More information</h1>
+                    You can see other fruits I like
+                    <a href="https://www.baidu.com/s?wd=%E6%B0%B4%E6%9E%9C">here</a>
+                </section>
+            </section>
+            <footer>
+                <nav>
+                    More information:
+                    <a href="http://fruit.org" Learn More About Fruit></a>
+                </nav>
+            </footer>
+        </article>
+    
+        <article>
+            <header>
+                <hgroup>
+                    <h1 id="activitieslike">Activities I like</h1>
+                    <h2>It hurts, but I keep doing it</h2>
+                </hgroup>
+            </header>
+            <section>
+                <header>
+                    <h1>Activities I like</h1>
+                </header>
+                <section>
+                    <p>I like to swim, cycle and run. I am in training for my first triathlon, but it is hard work.</p>
+                    <h1 id="tritypes">Kinds of Triathlon</h1>
+                    There are different kinds of triathlon - sprint, Olympic and so on.
+                    <section>
+                        <h1 id="mytri">The kind of triathlon I am aiming for</h1>
+                        I am animing for Olympic, which consists of the following:
+                        <ol>
+                            <li>1.5km swim</li>
+                            <li>40km cycle</li>
+                            <li>10km run</li>
+                        </ol>
+                    </section>
+                </section>
+            </section>
+            <footer>
+                <nav>
+                    More Information:
+                    <a href="http://triathlon.org">Learn More About Triathlons</a>
+                </nav>
+            </footer>
+        </article>
+        <footer id="mainFooter">
+            &#169;2011, Adam Freeman.
+            <a href="http://apress.com">Visit Apress</a>
+        </footer>
+    </body>
+    
+    </html>
