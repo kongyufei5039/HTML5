@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>out_form</title>
+    <base href="http://localhost:8080"/>
+</head>
+
+<body>
+    <form id="voteform">
+        <p><label for="fave">Fruit:<input id="fave" name="fave"/></label></p>
+        <p><label for="name">Name:<input id="name" name="name"/></label></p>
+    </form>
+    <button form="voteform" type="submit" formaction="/form" formmethod="POST">Submit Vote</button>
+    <button form="voteform" type="reset">Reset</button>
+    <button form="voteform" type="button">Do <strong>NOT</strong> press this button</button>
+</body>
+
+</html>

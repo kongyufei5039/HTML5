@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>label</title>
+    <base href="http://localhost:8080"/>
+</head>
+
+<body>
+    <form method="post" action="/form">
+        <fieldset>
+            <legend>Enter Your Details</legend>
+            <p><label for="fave">Fruit:<input id="fave" name="fave"/></label></p>
+            <p><label for="name">Name:<input id="name" name="name"/></label></p>
+        </fieldset>
+        <fieldset disabled>
+            <legend>Vote Your Three Favorite Fruits</legend>
+            <p><label for="fave1">#1:<input id="fave1" name="fave1"/></label></p>
+            <p><label for="fave2">#2:<input id="fave2" name="fave2"/></label></p>
+            <p><label for="fave3">#3:<input id="fave3" name="fave3"/></label></p>
+        </fieldset>
+        <button>Submit Vote</button>
+    </form>
+</body>
+
+</html>

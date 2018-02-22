@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>enctype</title>
+    <base href="http://localhost:8080"/>
+</head>
+<!-- 
+    enctype:
+        1.application/x-www-form-urlencode
+        2.multipart/form-data
+        3.text-plain
+ -->
+<body>
+    <form method="post" action="/form" enctype="text/plain">
+        <input name="fave" />
+        <input name="name"/>
+        <button>Submit Vote</button>
+    </form>
+</body>
+
+</html>
