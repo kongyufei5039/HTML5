@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>radio</title>
+    <base href="http://localhost:8080"></head>
+</head>
+<body>
+    <form method="POST" action="/form">
+        <p>
+            <label for="name">
+                Name: <input value="Yjanuary" id="name" name="name"/>
+            </label>
+        </p>
+        <p>
+            <label for="password">
+                Password: <input type="password" placeholder="Min 6 characters" id="password" name="password"/>
+            </label>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Vote for your favorite fruit</legend>
+                <label for="apples">
+                    <input type="radio" checked value="Apples" id="apples" 
+                        name="fave">
+                    Apples
+                </label>
+                <label for="oranges">
+                    <input type="radio" value="Oranges" id="oranges" 
+                        name="fave">
+                    Oranges
+                </label>
+                <label for="cherries">
+                    <input type="radio" value="Cherries" id="cherries" 
+                        name="fave">
+                    Cherries
+                </label>
+            </fieldset>
+        </p>
+        <button type="submit">Submit Vote</button>
+    </form>
+</body>
+</html>
